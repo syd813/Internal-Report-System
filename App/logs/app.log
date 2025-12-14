@@ -33,3 +33,159 @@
 2025-12-14 22:32:39,864 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:32:39] "GET / HTTP/1.1" 200 -
 2025-12-14 22:32:40,403 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:32:40] "GET /static/css/login.css HTTP/1.1" 200 -
 2025-12-14 22:32:40,484 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:32:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-14 22:53:01,956 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.169:5000
+2025-12-14 22:53:01,957 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-14 22:53:04,363 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:53:04] "GET / HTTP/1.1" 200 -
+2025-12-14 22:53:04,488 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:53:04] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-14 22:53:11,352 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:53:11] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-12-14 22:53:11,359 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:53:11] "GET /home HTTP/1.1" 200 -
+2025-12-14 22:53:11,386 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:53:11] "GET /static/css/home.css HTTP/1.1" 200 -
+2025-12-14 22:53:13,367 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:53:13] "GET /tool2 HTTP/1.1" 200 -
+2025-12-14 22:53:13,391 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:53:13] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-14 22:53:13,398 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:53:13] "GET /static/js/tool2.js HTTP/1.1" 200 -
+2025-12-14 22:53:29,742 [ERROR] app: Exception on /tool2 [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 36, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 105, in tool2
+    file.save(tmp.name)
+    ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Sayeed\\AppData\\Local\\Temp\\tmpkt5dsz8d.xlsx'
+2025-12-14 22:53:29,745 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:53:29] "[35m[1mPOST /tool2 HTTP/1.1[0m" 500 -
+2025-12-14 22:53:40,226 [ERROR] app: Exception on /tool2 [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 36, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 105, in tool2
+    file.save(tmp.name)
+    ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Sayeed\\AppData\\Local\\Temp\\tmpl545732y.xlsx'
+2025-12-14 22:53:40,228 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:53:40] "[35m[1mPOST /tool2 HTTP/1.1[0m" 500 -
+2025-12-14 22:54:04,040 [ERROR] app: Exception on /tool2 [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 36, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 105, in tool2
+    file.save(tmp.name)
+    ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Sayeed\\AppData\\Local\\Temp\\tmpdpm4ngmt.xlsx'
+2025-12-14 22:54:04,042 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:54:04] "[35m[1mPOST /tool2 HTTP/1.1[0m" 500 -
+2025-12-14 22:54:08,420 [ERROR] app: Exception on /tool2 [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 36, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 105, in tool2
+    file.save(tmp.name)
+    ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Sayeed\\AppData\\Local\\Temp\\tmp4z1cepj6.xlsx'
+2025-12-14 22:54:08,421 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:54:08] "[35m[1mPOST /tool2 HTTP/1.1[0m" 500 -
+2025-12-14 22:54:11,937 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:54:11] "GET /tool1 HTTP/1.1" 200 -
+2025-12-14 22:54:11,960 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:54:11] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-14 22:54:11,960 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:54:11] "GET /static/js/tool1.js HTTP/1.1" 200 -
+2025-12-14 22:54:18,190 [ERROR] app: Exception on /tool1 [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 36, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 74, in tool1
+    file.save(tmp.name)
+    ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Sayeed\\AppData\\Local\\Temp\\tmp73pa_yat.xlsx'
+2025-12-14 22:54:18,191 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:54:18] "[35m[1mPOST /tool1 HTTP/1.1[0m" 500 -
+2025-12-14 22:54:26,239 [ERROR] app: Exception on /tool1 [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 36, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 74, in tool1
+    file.save(tmp.name)
+    ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Sayeed\\AppData\\Local\\Temp\\tmp8tgpi7kc.xlsx'
+2025-12-14 22:54:26,240 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:54:26] "[35m[1mPOST /tool1 HTTP/1.1[0m" 500 -
+2025-12-14 22:54:28,801 [ERROR] app: Exception on /tool1 [POST]
+Traceback (most recent call last):
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 36, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Sayeed\Desktop\Internal Report System\app.py", line 74, in tool1
+    file.save(tmp.name)
+    ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sayeed\AppData\Roaming\Python\Python314\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Sayeed\\AppData\\Local\\Temp\\tmp2bm4w3gh.xlsx'
+2025-12-14 22:54:28,802 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:54:28] "[35m[1mPOST /tool1 HTTP/1.1[0m" 500 -

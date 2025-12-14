@@ -12,30 +12,46 @@ Includes secure admin login, file validation, logging, and automatic cleanup of 
 ## Project Structure
 
 ```
-project/
-├── app.py                     # Main Flask app
-├── App/
+Internal-Report-System/
+├── app.py                        # Main Flask application
+├── requirements.txt              # All Python dependencies
+├── README.md                     # Project overview and instructions
+│
+├── tools/                        # All backend processing tools
+│   ├── __init__.py
 │   ├── Tool_1/
-│   │   └── generate_report.py # Summary report logic
+│   │   ├── __init__.py
+│   │   ├── data_processing.py     # Optional, preprocessing Excel for Tool1
+│   │   ├── pdf_renderer.py        # Optional, PDF generation helper
+│   │   └── generate_report.py     # Main Tool1 report generation
+│   │
 │   └── Tool_2/
-│       └── generate_report.py # Detailed report logic
-├── templates/                 # HTML templates
+│       ├── __init__.py
+│       ├── data_processing.py     # Optional, preprocessing Excel for Tool2
+│       ├── pdf_renderer.py        # Optional, PDF generation helper
+│       └── generate_report.py     # Main Tool2 report generation
+│
+├── templates/                    # HTML templates
 │   ├── login.html
 │   ├── home.html
 │   ├── tool1.html
 │   └── tool2.html
-├── static/                    # CSS and JS
+│
+├── static/                       # Static assets
 │   ├── css/
 │   │   ├── home.css
 │   │   ├── tool1.css
 │   │   ├── tool2.css
 │   │   └── login.css
+│   │
 │   └── js/
 │       ├── home.js
 │       ├── tool1.js
 │       ├── tool2.js
 │       └── login.js
-└── README.md                  # This file
+│
+└── tmp/                          # Optional: temporary uploaded files (Windows safe)
+
 ```
 
 ---

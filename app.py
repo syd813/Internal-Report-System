@@ -70,21 +70,24 @@ def tool1():
 
         as_of_date = datetime.strptime(as_of_date_str, "%Y-%m-%d").date()
 
-        with tempfile.NamedTemporaryFile(suffix=".xlsx") as tmp:
-            file.save(tmp.name)
-            try:
-                pdf_bytes = generate_pdf_report(tmp.name, as_of_date)
-            except Exception as e:
-                logger.exception("Tool1 report generation failed")
-                return jsonify({"error": str(e)}), 400
+        # Safe temporary file on Windows
+        tmp_path = os.path.join(tempfile.gettempdir(), file.filename)
+        file.save(tmp_path)
 
+        try:
+            pdf_bytes = generate_pdf_report(tmp_path, as_of_date)
+        except Exception as e:
+            logger.exception("Tool1 report generation failed")
+            os.remove(tmp_path)
+            return jsonify({"error": str(e)}), 400
+
+        os.remove(tmp_path)
         logger.info("Tool1 report generated for date: %s", as_of_date)
         return send_file(io.BytesIO(pdf_bytes),
                          mimetype="application/pdf",
                          as_attachment=True,
                          download_name=f"Cost_Report_{as_of_date}.pdf")
 
-    return render_template("tool1.html")
 
 # Tool 2 route
 @app.route("/tool2", methods=["GET", "POST"])
@@ -101,23 +104,27 @@ def tool2():
         if not file.filename.lower().endswith(('.xlsx', '.xls')):
             return jsonify({"error": "Invalid file type. Please upload Excel."}), 400
 
-        with tempfile.NamedTemporaryFile(suffix=".xlsx") as tmp:
-            file.save(tmp.name)
-            try:
-                pdf_buffer = generate_cost_report(tmp.name, date_from, date_till, cost_code)
-            except ValueError as e:
-                logger.warning("Tool2 validation error: %s", e)
-                return jsonify({"error": str(e)}), 400
-            except Exception as e:
-                logger.exception("Tool2 report generation failed")
-                return jsonify({"error": "Unexpected error generating report"}), 500
+        tmp_path = os.path.join(tempfile.gettempdir(), file.filename)
+        file.save(tmp_path)
 
+        try:
+            pdf_buffer = generate_cost_report(tmp_path, date_from, date_till, cost_code)
+        except ValueError as e:
+            logger.warning("Tool2 validation error: %s", e)
+            os.remove(tmp_path)
+            return jsonify({"error": str(e)}), 400
+        except Exception as e:
+            logger.exception("Tool2 report generation failed")
+            os.remove(tmp_path)
+            return jsonify({"error": "Unexpected error generating report"}), 500
+
+        os.remove(tmp_path)
         logger.info("Tool2 report generated: date_from=%s, date_till=%s, cost_code=%s", date_from, date_till, cost_code)
         return send_file(pdf_buffer,
                          mimetype="application/pdf",
                          as_attachment=True,
                          download_name=f"Detailed_Report.pdf")
-    return render_template("tool2.html")
+
 
 # Logout route
 @app.route("/logout")
