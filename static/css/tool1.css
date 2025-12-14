@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+h1 {
+    color: #2C2C2C;
+    margin-bottom: 32px;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+input[type="file"],
+input[type="date"] {
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 18px;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #2C2C2C;
+    outline: none;
+    transition: all 0.25s ease;
+    background: #FAFAFA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="file"]:focus,
+input[type="date"]:focus {
+    border-color: #6A1E28;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(106, 30, 40, 0.08);
+}
+
+input[type="file"] {
+    cursor: pointer;
+    padding: 12px 14px;
+}
+
+input[type="file"]::file-selector-button {
+    padding: 8px 16px;
+    background: #F5F5F5;
+    border: 1px solid #D0D0D0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #4A4A4A;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin-right: 12px;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: #E8E8E8;
+    border-color: #B0B0B0;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #6A1E28 0%, #8B2535 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(106, 30, 40, 0.2);
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4D141B 0%, #6A1E28 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(106, 30, 40, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 25px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,35 @@
+2025-12-14 19:03:19,766 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.169:5000
+2025-12-14 19:03:19,766 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-14 19:03:24,188 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:24] "GET / HTTP/1.1" 200 -
+2025-12-14 19:03:24,339 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:24] "GET /static/css/login.css HTTP/1.1" 200 -
+2025-12-14 19:03:24,383 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-14 19:03:33,328 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:33] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-12-14 19:03:33,336 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:33] "GET /home HTTP/1.1" 200 -
+2025-12-14 19:03:33,363 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:33] "GET /static/css/home.css HTTP/1.1" 200 -
+2025-12-14 19:03:39,824 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:39] "GET /tool1 HTTP/1.1" 200 -
+2025-12-14 19:03:39,846 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:39] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-14 19:03:39,847 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:39] "GET /static/js/tool1.js HTTP/1.1" 200 -
+2025-12-14 19:03:48,872 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:48] "GET / HTTP/1.1" 200 -
+2025-12-14 19:03:48,896 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:48] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-14 19:03:56,901 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:56] "GET / HTTP/1.1" 200 -
+2025-12-14 19:03:56,924 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:03:56] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-14 19:04:01,998 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:04:01] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-12-14 19:04:02,003 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:04:02] "GET /home HTTP/1.1" 200 -
+2025-12-14 19:04:02,031 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:04:02] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-12-14 19:04:06,603 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:04:06] "GET /tool1 HTTP/1.1" 200 -
+2025-12-14 19:04:06,624 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:04:06] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-14 19:04:06,629 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:04:06] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-14 19:04:09,851 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:04:09] "GET /tool2 HTTP/1.1" 200 -
+2025-12-14 19:04:09,871 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:04:09] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-14 19:04:09,879 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 19:04:09] "GET /static/js/tool2.js HTTP/1.1" 200 -
+2025-12-14 22:32:36,361 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.169:5000
+2025-12-14 22:32:36,362 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-14 22:32:39,864 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:32:39] "GET / HTTP/1.1" 200 -
+2025-12-14 22:32:40,403 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:32:40] "GET /static/css/login.css HTTP/1.1" 200 -
+2025-12-14 22:32:40,484 [INFO] werkzeug: 127.0.0.1 - - [14/Dec/2025 22:32:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

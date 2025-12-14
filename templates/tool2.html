@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tool 2 - Detailed Report</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tool2.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Cost Details Report</h1>
+    <form id="tool2Form" method="POST" enctype="multipart/form-data" action="{{ url_for('tool2') }}">
+        <input type="file" name="excel_file" accept=".xlsx,.xls" required>
+        <input type="date" name="date_from" required>
+        <input type="date" name="date_till" required>
+        <input type="text" name="cost_code" placeholder="Cost Code" required>
+        <button type="submit">Generate PDF</button>
+    </form>
+</div>
+<script src="{{ url_for('static', filename='js/tool2.js') }}"></script>
+</body>
+</html>
