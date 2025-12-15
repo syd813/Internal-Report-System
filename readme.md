@@ -1,92 +1,93 @@
 # INTERNAL REPORT SYSTEM
 
-A Flask-based web application for generating **cost reports in PDF format**. The system contains **two tools**:
+A Flask-based web application for generating **cost reports in PDF format** from Excel files. The system provides **two reporting tools**, secure admin login, centralized logging, validation, and automatic cleanup of temporary files.
 
-* **Tool 1:** Summary cost report.
-* **Tool 2:** Detailed cost report with optional filters.
+---
 
-Includes secure admin login, file validation, logging, and automatic cleanup of temporary files.
+## Features
+
+* Secure admin login (hashed password)
+* Two PDF reporting tools (Summary & Detailed)
+* Excel validation with clear error messages
+* Centralized logging (file + console)
+* Automatic temporary file cleanup
+* Clean separation of app logic and report tools
 
 ---
 
 ## Project Structure
 
 ```
-Internal-Report-System/
-├── app.py                        # Main Flask application
-├── requirements.txt              # All Python dependencies
-├── README.md                     # Project overview and instructions
+project/
 │
-├── tools/                        # All backend processing tools
-│   ├── __init__.py
+├── app.py
+│
+├── App/
 │   ├── Tool_1/
-│   │   ├── __init__.py
-│   │   ├── data_processing.py     # Optional, preprocessing Excel for Tool1
-│   │   ├── pdf_renderer.py        # Optional, PDF generation helper
-│   │   └── generate_report.py     # Main Tool1 report generation
-│   │
+│   │   └── generate_report.py
 │   └── Tool_2/
-│       ├── __init__.py
-│       ├── data_processing.py     # Optional, preprocessing Excel for Tool2
-│       ├── pdf_renderer.py        # Optional, PDF generation helper
-│       └── generate_report.py     # Main Tool2 report generation
+│       └── generate_report.py
 │
-├── templates/                    # HTML templates
-│   ├── login.html
+├── templates/
 │   ├── home.html
 │   ├── tool1.html
-│   └── tool2.html
+│   ├── tool2.html
+│   └── login.html
 │
-├── static/                       # Static assets
+├── static/
 │   ├── css/
 │   │   ├── home.css
 │   │   ├── tool1.css
 │   │   ├── tool2.css
 │   │   └── login.css
-│   │
 │   └── js/
 │       ├── home.js
 │       ├── tool1.js
 │       ├── tool2.js
 │       └── login.js
 │
-└── tmp/                          # Optional: temporary uploaded files (Windows safe)
-
+├── App/logs/
+│   └── app.log
+│
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-Install dependencies:
+## Installation
 
-```bash
-pip install flask pandas reportlab openpyxl werkzeug
-```
-
----
-
-## Setup & Running
-
-1. **Create a virtual environment** (recommended):
+### 1. Create virtual environment (recommended)
 
 ```bash
 python -m venv venv
 venv\Scripts\activate  # Windows
-# or source venv/bin/activate  # Linux/Mac
+# source venv/bin/activate  # Linux / macOS
 ```
 
-2. **Install dependencies**:
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Run the Flask app**:
+**Required packages**
+
+* Flask
+* pandas
+* reportlab
+* openpyxl
+* werkzeug
+
+---
+
+## Running the Application
 
 ```bash
 python app.py
 ```
 
-4. **Open in browser**:
+Open in browser:
 
 ```
 http://localhost:5000/
@@ -94,90 +95,139 @@ http://localhost:5000/
 
 ---
 
-## Login
+## Authentication
 
-* Admin username: `admin`
-* Admin password: *(provide separately; stored securely as a hash)*
+* **Username:** `admin`
+* **Password:** Stored securely as a hash in `app.py`
+
+Login is required to access both tools.
 
 ---
 
-## Tool 1 – Summary Cost Report
+## Tool 1 — Summary Cost Report
+
+### Purpose
+
+Generates a **grouped summary PDF** with totals and grand totals.
 
 ### Usage
 
-1. Go to `/tool1` after login.
-2. Upload an Excel file.
-3. Select the **"As of" date**.
-4. Click **Generate PDF**.
-5. PDF will download automatically.
+1. Login
+2. Navigate to `/tool1`
+3. Upload Excel file
+4. Select **As Of Date**
+5. Generate PDF
 
-### Excel Requirements
+### Required Excel Columns
 
-* Required columns:
+* `Group Name`
+* `Cost Code`
+* `Cost Description`
+* `Budget`
+* `Actual`
+* `Provision`
+* `Total Cost`
+* `Variance`
 
-  * `Group Name`
-  * `Cost Code`
-  * `Cost Description`
-  * `Budget`, `Actual`, `Provision`, `Total Cost`, `Variance`
-* Optional:
+### Optional Columns
 
-  * `Project Number`
+* `Project Number`
+* `Date` (used for filtering by *As Of* date)
 
-### Features
+### Output
 
-* Groups costs by `Group Name` and `Cost Code`.
-* Calculates **group totals** and **grand total**.
-* Safely handles numeric columns.
+* Group-wise totals
+* Grand total at bottom
+* A3 landscape PDF
 
 ---
 
-## Tool 2 – Detailed Cost Report
+## Tool 2 — Detailed Cost Report
+
+### Purpose
+
+Generates a **detailed transactional PDF** with optional filters.
 
 ### Usage
 
-1. Go to `/tool2` after login.
-2. Upload an Excel file.
-3. Optionally, provide:
+1. Login
+2. Navigate to `/tool2`
+3. Upload Excel file
+4. Optionally provide:
 
-   * **Date From**
-   * **Date Till**
-   * **Cost Code**
-4. Click **Generate PDF**.
-5. PDF will download automatically.
+   * Date From
+   * Date Till
+   * Cost Code
+5. Generate PDF
 
-### Excel Requirements
+### Required Excel Columns
 
-* Required columns:
+* `Date`
+* `Cost Code`
+* `Cost Description`
+* `Actual`
 
-  * `Date`
-  * `Cost Code`
-  * `Cost Description`
-  * `Actual`
-* Optional columns:
+### Optional Columns
 
-  * `Narration`
-  * `Supplier name`
-  * `LPO NO`, `MRIR NO`, `PV REF NO`
+* `Narration`
+* `Supplier name`
+* `LPO NO`
+* `MRIR NO`
+* `PV REF NO`
 
-### Features
+### Output
 
-* Shows detailed entries with all relevant columns.
-* Summarizes **total amount** at the bottom.
-* Filters applied automatically if provided.
-* Handles invalid or missing data gracefully.
-
----
-
-## Security & Logging
-
-* Login required for both tools.
-* Maximum upload size: 10 MB.
-* Temporary files are cleaned automatically.
-* Logging:
-
-  * Successful and failed login attempts
-  * Report generation events
-  * Validation errors and unexpected exceptions
+* Row-level cost details
+* Total amount summary
+* A4 landscape PDF
 
 ---
 
+## Error Handling & Validation
+
+* Missing or invalid columns are detected early
+* Invalid dates and numeric values are handled safely
+* Empty results return clear validation errors
+* Tools raise domain-specific exceptions
+* `app.py` controls HTTP responses and user messaging
+
+---
+
+## Logging
+
+Logging is configured centrally in `app.py`:
+
+* Application events
+* Validation errors
+* Tool failures
+* Unexpected crashes
+
+Logs are written to:
+
+```
+App/logs/app.log
+```
+
+---
+
+## Security Notes
+
+* Passwords are never stored in plain text
+* File uploads are validated
+* Temporary files are deleted after processing
+* Debug mode should be disabled in production
+
+---
+
+## Production Checklist
+
+* Disable `debug=True`
+* Add `.gitignore` (venv, logs, `__pycache__`)
+* Rotate logs if needed
+* Set secret keys via environment variables
+
+---
+
+## License
+
+Internal use o
