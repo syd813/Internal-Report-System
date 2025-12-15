@@ -23,6 +23,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Home page (Tool Selection)
+@app.route("/home")
+def home():
+    return render_template("home.html")
 
 # Login
 @app.route("/", methods=["GET", "POST"])

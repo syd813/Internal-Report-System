@@ -16,6 +16,16 @@
         <input type="text" name="cost_code" placeholder="Cost Code" required>
         <button type="submit">Generate PDF</button>
     </form>
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" class="loading-overlay" style="display: none;">
+        <div class="loading-spinner"></div>
+        <p>Generating PDF, please wait...</p>
+    </div>
+    <div class="navigation-buttons">
+        <button type="button" onclick="window.history.back()">Back</button>
+        <button type="button" onclick="window.location.href='{{ url_for('home') }}'">Home</button>
+        <button type="button" onclick="window.location.href='{{ url_for('login') }}'">Exit</button>
+    </div>
 </div>
 <script src="{{ url_for('static', filename='js/tool2.js') }}"></script>
 </body>

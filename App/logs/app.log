@@ -40,3 +40,279 @@
 2025-12-15 06:24:44,348 [INFO] werkzeug:  * Debugger PIN: 443-135-245
 2025-12-15 06:24:47,349 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 06:24:47] "GET / HTTP/1.1" 200 -
 2025-12-15 06:24:47,768 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 06:24:47] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-15 21:04:40,741 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.169:5000
+2025-12-15 21:04:40,742 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-15 21:04:40,744 [INFO] werkzeug:  * Restarting with stat
+2025-12-15 21:04:41,539 [WARNING] werkzeug:  * Debugger is active!
+2025-12-15 21:04:41,552 [INFO] werkzeug:  * Debugger PIN: 443-135-245
+2025-12-15 21:04:44,954 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:04:44] "GET / HTTP/1.1" 200 -
+2025-12-15 21:04:45,447 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:04:45] "GET /static/css/login.css HTTP/1.1" 200 -
+2025-12-15 21:04:45,495 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:04:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-15 21:04:49,167 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:04:49] "POST / HTTP/1.1" 200 -
+2025-12-15 21:04:49,196 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:04:49] "GET /static/css/home.css HTTP/1.1" 200 -
+2025-12-15 21:04:52,791 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:04:52] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:04:52,813 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:04:52] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-15 21:04:52,815 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:04:52] "GET /static/js/tool1.js HTTP/1.1" 200 -
+2025-12-15 21:04:58,605 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:04:58] "GET / HTTP/1.1" 200 -
+2025-12-15 21:04:58,633 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:04:58] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-15 21:05:02,081 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:05:02] "POST / HTTP/1.1" 200 -
+2025-12-15 21:05:02,108 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:05:02] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-12-15 21:05:04,739 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:05:04] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:05:04,759 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:05:04] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:05:04,763 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:05:04] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:06:29,955 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:06:29] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:06:29,977 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:06:29] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:06:29,983 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:06:29] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:06:29,988 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:06:29] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:06:29,990 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:06:29] "GET /static/js/tool2.js HTTP/1.1" 200 -
+2025-12-15 21:11:56,801 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.169:5000
+2025-12-15 21:11:56,802 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-15 21:11:56,803 [INFO] werkzeug:  * Restarting with stat
+2025-12-15 21:11:57,778 [WARNING] werkzeug:  * Debugger is active!
+2025-12-15 21:11:57,788 [INFO] werkzeug:  * Debugger PIN: 443-135-245
+2025-12-15 21:12:02,194 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:12:02] "GET / HTTP/1.1" 200 -
+2025-12-15 21:12:02,588 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:12:02] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-15 21:12:02,629 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:12:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-15 21:12:09,855 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:12:09] "POST / HTTP/1.1" 200 -
+2025-12-15 21:12:09,876 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:12:09] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-12-15 21:12:12,923 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:12:12] "[35m[1mGET /tool1 HTTP/1.1[0m" 500 -
+2025-12-15 21:12:12,947 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:12:12] "GET /tool1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-12-15 21:12:12,955 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:12:12] "GET /tool1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-12-15 21:12:12,969 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:12:12] "GET /tool1?__debugger__=yes&cmd=resource&f=console.png&s=IbxndN3ksbdxnUMQcb72 HTTP/1.1" 200 -
+2025-12-15 21:12:13,010 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:12:13] "GET /tool1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-12-15 21:13:18,153 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:13:18] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:13:18,179 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:13:18] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-15 21:13:18,183 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:13:18] "GET /static/js/tool1.js HTTP/1.1" 200 -
+2025-12-15 21:13:38,357 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:13:38] "GET / HTTP/1.1" 200 -
+2025-12-15 21:13:38,381 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:13:38] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-15 21:13:44,101 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:13:44] "GET / HTTP/1.1" 200 -
+2025-12-15 21:13:44,130 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:13:44] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-15 21:13:48,780 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:13:48] "GET / HTTP/1.1" 200 -
+2025-12-15 21:13:48,806 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:13:48] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-15 21:14:37,989 [INFO] werkzeug:  * Detected change in 'c:\\Users\\Sayeed\\Desktop\\Internal Report System\\app.py', reloading
+2025-12-15 21:14:38,163 [INFO] werkzeug:  * Restarting with stat
+2025-12-15 21:15:00,453 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.169:5000
+2025-12-15 21:15:00,453 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-15 21:15:00,454 [INFO] werkzeug:  * Restarting with stat
+2025-12-15 21:15:01,295 [WARNING] werkzeug:  * Debugger is active!
+2025-12-15 21:15:01,307 [INFO] werkzeug:  * Debugger PIN: 443-135-245
+2025-12-15 21:15:01,730 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:01] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:15:01,959 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:01] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:15:01,997 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:01] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:15:04,960 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:04] "GET / HTTP/1.1" 200 -
+2025-12-15 21:15:04,987 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:04] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-15 21:15:11,547 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:11] "POST / HTTP/1.1" 200 -
+2025-12-15 21:15:11,566 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:11] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-12-15 21:15:13,549 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:13] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:15:13,571 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:13] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:15:13,578 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:13] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:15:14,849 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:14] "GET / HTTP/1.1" 200 -
+2025-12-15 21:15:14,876 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:14] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-15 21:15:46,408 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:46] "GET / HTTP/1.1" 200 -
+2025-12-15 21:15:46,429 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:46] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-15 21:15:53,158 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:53] "POST / HTTP/1.1" 200 -
+2025-12-15 21:15:53,179 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:15:53] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2025-12-15 21:16:00,609 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:16:00] "POST / HTTP/1.1" 200 -
+2025-12-15 21:16:00,630 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:16:00] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-12-15 21:16:06,414 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:16:06] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:16:06,437 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:16:06] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:16:06,442 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:16:06] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:16:08,133 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:16:08] "GET /home HTTP/1.1" 200 -
+2025-12-15 21:16:08,162 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:16:08] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-12-15 21:17:12,569 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:12] "GET /home HTTP/1.1" 200 -
+2025-12-15 21:17:12,592 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:12] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-12-15 21:17:13,815 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:13] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:17:13,839 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:13] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-15 21:17:13,840 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:13] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:17:18,317 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:18] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:17:18,341 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:18] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:17:18,343 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:18] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:17:19,160 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:19] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:17:19,178 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:19] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:17:19,189 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:19] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:17:51,020 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:51] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:17:51,039 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:51] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-15 21:17:51,046 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:17:51] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:18:15,193 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:18:15] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:18:15,213 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:18:15] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-15 21:18:15,217 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:18:15] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:18:16,022 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:18:16] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:18:16,039 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:18:16] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:18:16,049 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:18:16] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:18:40,934 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:18:40] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:18:40,954 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:18:40] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:18:40,962 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:18:40] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:19:30,275 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:19:30] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:19:30,293 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:19:30] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:19:30,297 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:19:30] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:19:32,034 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:19:32] "GET /home HTTP/1.1" 200 -
+2025-12-15 21:19:32,062 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:19:32] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-12-15 21:19:32,785 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:19:32] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:19:32,809 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:19:32] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:19:32,816 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:19:32] "GET /static/js/tool2.js HTTP/1.1" 200 -
+2025-12-15 21:20:08,520 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:08] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:08,538 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:08] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:20:08,548 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:08] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:09,480 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:09] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:09,499 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:09] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:20:09,504 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:09] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:09,890 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:09] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:09,911 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:09] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:20:09,912 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:09] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:10,060 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:10] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:10,080 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:10] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:20:10,081 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:10] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:10,197 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:10] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:10,218 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:10] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:20:10,223 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:10] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:10,360 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:10] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:10,381 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:10] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:20:10,383 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:10] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:17,681 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:17] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:17,699 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:17] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:20:17,707 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:17] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:23,972 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:23] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:23,992 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:23] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:20:23,994 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:23] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:32,116 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:32] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:32,138 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:32] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:20:32,143 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:32] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:34,937 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:34] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:34,959 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:34] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:20:34,961 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:34] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:37,484 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:37] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:37,504 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:37] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:20:37,505 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:37] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:42,931 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:42] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:42,948 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:42] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:20:42,956 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:42] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:44,583 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:44] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:44,605 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:44] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:20:44,606 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:44] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:45,181 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:45] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:45,199 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:45] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:20:45,208 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:45] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:48,107 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:48] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:48,128 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:48] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:20:48,134 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:48] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:49,257 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:49] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:49,276 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:49] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:20:49,282 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:49] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:49,430 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:49] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:49,450 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:49] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:20:49,457 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:49] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:20:49,592 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:49] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:20:49,612 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:49] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:20:49,618 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:20:49] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:21:05,875 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:21:05] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:21:05,896 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:21:05] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:21:05,898 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:21:05] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:22:46,115 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:22:46] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:22:46,135 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:22:46] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:22:46,137 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:22:46] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:23:37,402 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:23:37] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:23:37,419 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:23:37] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:23:37,429 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:23:37] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:23:54,303 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:23:54] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:23:54,330 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:23:54] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:23:54,333 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:23:54] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:23:57,340 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:23:57] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:23:57,368 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:23:57] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:23:57,370 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:23:57] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:24:13,571 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:24:13] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:24:13,588 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:24:13] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:24:13,596 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:24:13] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:24:19,205 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:24:19] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:24:19,228 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:24:19] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:24:19,230 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:24:19] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:25:23,629 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:23] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:25:23,647 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:23] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:25:23,656 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:23] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:25:45,703 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:45] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:25:45,726 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:45] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:25:45,728 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:45] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:25:48,281 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:48] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:25:48,314 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:48] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-15 21:25:48,315 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:48] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:25:51,963 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:51] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:25:51,982 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:51] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:25:51,990 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:25:51] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:27:50,399 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:27:50] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:27:50,421 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:27:50] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-15 21:27:50,426 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:27:50] "GET /static/js/tool1.js HTTP/1.1" 200 -
+2025-12-15 21:27:52,003 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:27:52] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:27:52,023 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:27:52] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:27:52,027 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:27:52] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:28:19,885 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:19] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:28:19,903 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:19] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-15 21:28:19,907 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:19] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:28:20,406 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:20] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:28:20,427 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:20] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:28:20,428 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:20] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:28:20,565 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:20] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:28:20,587 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:20] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:28:20,589 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:20] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:28:55,412 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:55] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:28:55,433 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:55] "GET /static/css/tool1.css HTTP/1.1" 200 -
+2025-12-15 21:28:55,434 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:28:55] "GET /static/js/tool1.js HTTP/1.1" 200 -
+2025-12-15 21:29:10,005 [INFO] App.Tool_1.generate_report: Reading Excel file...
+2025-12-15 21:29:11,081 [INFO] App.Tool_1.generate_report: Creating PDF report for 41 rows.
+2025-12-15 21:29:11,301 [INFO] App.Tool_1.generate_report: PDF generation complete
+2025-12-15 21:29:11,306 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:29:11] "POST /tool1 HTTP/1.1" 200 -
+2025-12-15 21:29:42,266 [INFO] App.Tool_1.generate_report: Reading Excel file...
+2025-12-15 21:29:42,506 [INFO] App.Tool_1.generate_report: Creating PDF report for 41 rows.
+2025-12-15 21:29:42,718 [INFO] App.Tool_1.generate_report: PDF generation complete
+2025-12-15 21:29:42,723 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:29:42] "POST /tool1 HTTP/1.1" 200 -
+2025-12-15 21:29:43,928 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:29:43] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:29:43,947 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:29:43] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:29:43,953 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:29:43] "GET /static/js/tool1.js HTTP/1.1" 200 -
+2025-12-15 21:29:49,860 [INFO] App.Tool_1.generate_report: Reading Excel file...
+2025-12-15 21:29:50,085 [INFO] App.Tool_1.generate_report: Creating PDF report for 43 rows.
+2025-12-15 21:29:50,290 [INFO] App.Tool_1.generate_report: PDF generation complete
+2025-12-15 21:29:50,294 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:29:50] "POST /tool1 HTTP/1.1" 200 -
+2025-12-15 21:31:22,058 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:31:22] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:31:22,076 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:31:22] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:31:22,082 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:31:22] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:31:51,745 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:31:51] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:31:51,768 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:31:51] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:31:51,771 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:31:51] "[36mGET /static/js/tool1.js HTTP/1.1[0m" 304 -
+2025-12-15 21:31:58,992 [INFO] App.Tool_1.generate_report: Reading Excel file...
+2025-12-15 21:31:59,222 [INFO] App.Tool_1.generate_report: Creating PDF report for 43 rows.
+2025-12-15 21:31:59,440 [INFO] App.Tool_1.generate_report: PDF generation complete
+2025-12-15 21:31:59,444 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:31:59] "POST /tool1 HTTP/1.1" 200 -
+2025-12-15 21:33:14,011 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:33:14] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:33:14,036 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:33:14] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:33:14,038 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:33:14] "GET /static/js/tool1.js HTTP/1.1" 200 -
+2025-12-15 21:33:20,070 [INFO] App.Tool_1.generate_report: Reading Excel file...
+2025-12-15 21:33:20,315 [INFO] App.Tool_1.generate_report: Creating PDF report for 43 rows.
+2025-12-15 21:33:20,569 [INFO] App.Tool_1.generate_report: PDF generation complete
+2025-12-15 21:33:20,573 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:33:20] "POST /tool1 HTTP/1.1" 200 -
+2025-12-15 21:34:18,949 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:34:18] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:34:18,980 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:34:18] "[36mGET /static/css/tool1.css HTTP/1.1[0m" 304 -
+2025-12-15 21:34:18,980 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:34:18] "GET /static/js/tool1.js HTTP/1.1" 200 -
+2025-12-15 21:34:25,638 [INFO] App.Tool_1.generate_report: Reading Excel file...
+2025-12-15 21:34:25,929 [INFO] App.Tool_1.generate_report: Creating PDF report for 43 rows.
+2025-12-15 21:34:26,184 [INFO] App.Tool_1.generate_report: PDF generation complete
+2025-12-15 21:34:26,190 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:34:26] "POST /tool1 HTTP/1.1" 200 -
+2025-12-15 21:34:57,795 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:34:57] "GET /tool1 HTTP/1.1" 200 -
+2025-12-15 21:35:06,848 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:35:06] "POST / HTTP/1.1" 200 -
+2025-12-15 21:35:06,872 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:35:06] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-12-15 21:37:13,843 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:37:13] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:37:13,870 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:37:13] "GET /static/css/tool2.css HTTP/1.1" 200 -
+2025-12-15 21:37:13,876 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:37:13] "GET /static/js/tool2.js HTTP/1.1" 200 -
+2025-12-15 21:37:34,824 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:37:34] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:37:34,854 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:37:34] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:37:34,857 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:37:34] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:38:12,527 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:38:12] "GET /tool2 HTTP/1.1" 200 -
+2025-12-15 21:38:12,560 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:38:12] "[36mGET /static/css/tool2.css HTTP/1.1[0m" 304 -
+2025-12-15 21:38:12,575 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:38:12] "[36mGET /static/js/tool2.js HTTP/1.1[0m" 304 -
+2025-12-15 21:38:25,035 [INFO] werkzeug: 127.0.0.1 - - [15/Dec/2025 21:38:25] "POST /tool2 HTTP/1.1" 200 -
